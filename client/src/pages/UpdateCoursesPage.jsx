@@ -3,7 +3,7 @@ import "../styles/UpdateCoursesPage.css";
 
 import { useNavigate, useParams } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import Header from "../components/Header";
 const UpdateCoursesPage = () => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const UpdateCoursesPage = () => {
     queryKey: ["singleCourse"],
     queryFn: () =>
       axios
-        .get(`https://crm-lms-sever.vercel.app/api/courses/single/${courseId}`, {
+        .get(`/courses/single/${courseId}`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -32,7 +32,7 @@ const UpdateCoursesPage = () => {
   const UpdateCourseMutation = useMutation({
     mutationFn: (udpateData) => {
       return axios.put(
-        `https://crm-lms-sever.vercel.app/api/courses/${courseId}`,
+        `/courses/${courseId}`,
         udpateData,
         { withCredentials: true }
       );

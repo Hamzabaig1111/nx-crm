@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import axios from "axios";
+import axios from "../components/BaseURL";
 const InputFieldItem = ({
   label,
   name,
@@ -189,7 +189,7 @@ const RegistrationPage = () => {
 
         // Step 1: Create Admission Record
         const admissionResponse = await axios.post(
-          "https://crm-lms-sever.vercel.app/api/admissions/createadmission",
+          "/admissions/createadmission",
           values,
           { withCredentials: true }
         );
@@ -216,7 +216,7 @@ const RegistrationPage = () => {
         };
 
         const feeRecordResponse = await axios.post(
-          "https://crm-lms-sever.vercel.app/api/feerecord/create-fee-record",
+          "/feerecord/create-fee-record",
           feeRecordData,
           { withCredentials: true }
         );

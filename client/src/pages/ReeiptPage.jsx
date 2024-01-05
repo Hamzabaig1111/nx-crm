@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/ReceiptPage.css";
 import Header from "../components/Header";
 import { Link, useLocation } from "react-router-dom";
-import axios from "axios"; // Import Axios for making API requests
+import axios from "../components/BaseURL"; // Import Axios for making API requests
 import { PrinterIcon } from "@heroicons/react/24/outline";
 
 const ReceiptPage = () => {
@@ -15,7 +15,7 @@ const ReceiptPage = () => {
     try {
       // Make an API request to fetch student details based on the search term and type
       const response = await axios.get(
-        `https://crm-lms-sever.vercel.app/api/admissions?${searchType}=${searchTerm}`,
+        `/admissions?${searchType}=${searchTerm}`,
         { withCredentials: true }
       );
 

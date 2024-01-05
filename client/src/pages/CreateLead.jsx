@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/CreateLead.css";
 import Header from "../components/Header";
 import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import Popup from "reactjs-popup";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import * as Yup from "yup";
@@ -32,7 +32,7 @@ const CreateLead = () => {
   const CreateLeadMutation = useMutation({
     mutationFn: (newLead) => {
       return axios.post(
-        "https://crm-lms-sever.vercel.app/api/leads/createlead",
+        "/leads/createlead",
         newLead,
         { withCredentials: true }
       );

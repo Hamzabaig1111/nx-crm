@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import "../styles/Agents.css";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import {
   PencilSquareIcon,
   TrashIcon,
@@ -16,7 +16,7 @@ const AgentsPage = () => {
     queryKey: ["agentData"],
     queryFn: () =>
       axios
-        .get("https://crm-lms-sever.vercel.app/api/agents/", {
+        .get("/agents/", {
           withCredentials: true,
         })
         .then((res) => {
@@ -25,12 +25,9 @@ const AgentsPage = () => {
   });
   const deleteMutationFn = useMutation({
     mutationFn: (agentId) => {
-      return axios.delete(
-        `https://crm-lms-sever.vercel.app/api/agents/${agentId},`,
-        {
-          withCredentials: true,
-        }
-      );
+      return axios.delete(`/agents/${agentId},`, {
+        withCredentials: true,
+      });
     },
     onSuccess: () => {
       refetch();
@@ -44,13 +41,10 @@ const AgentsPage = () => {
   const handleClickExports = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(
-        "https://crm-lms-sever.vercel.app/api/agents/getagentstoexcel",
-        {
-          withCredentials: true,
-          responseType: "blob", // Set the response type to 'blob'
-        }
-      );
+      const response = await axios.get("/agents/getagentstoexcel", {
+        withCredentials: true,
+        responseType: "blob", // Set the response type to 'blob'
+      });
 
       // Create a blob from the response data
       const blob = new Blob([response.data], {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import * as Yup from "yup";
 import Header from "../components/Header";
 import "../styles/UpdateOrder.css";
@@ -17,7 +17,7 @@ const UpdateOrderPage = () => {
     queryKey: ["SingleOrder"],
     queryFn: () =>
       axios
-        .get(`https://crm-lms-sever.vercel.app/api/orders/${orderId}`, {
+        .get(`/orders/${orderId}`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -36,7 +36,7 @@ const UpdateOrderPage = () => {
   const UpdateOrderMutation = useMutation({
     mutationFn: (updateData) => {
       return axios.put(
-        `https://crm-lms-sever.vercel.app/api/orders/${orderId}`,
+        `/orders/${orderId}`,
         updateData,
         { withCredentials: true }
       );

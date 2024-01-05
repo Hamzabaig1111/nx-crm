@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Header from "../components/Header";
 import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 
 const AddNewUser = () => {
   const formik = useFormik({
@@ -68,7 +68,7 @@ const AddNewUser = () => {
   const createNewUserMutation = useMutation({
     mutationFn: (newAgent) => {
       return axios.post(
-        "https://crm-lms-sever.vercel.app/api/agents/createagent",
+        "/agents/createagent",
         newAgent,
         { withCredentials: true }
       );

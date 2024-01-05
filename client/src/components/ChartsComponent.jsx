@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/ChartsComponents.css";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { Doughnut } from "react-chartjs-2";
 
 const ChartsComponent = () => {
@@ -11,7 +11,7 @@ const ChartsComponent = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://crm-lms-sever.vercel.app/api/courses/getactivebadgeswithstatus",
+          "/courses/getactivebadgeswithstatus",
           { withCredentials: true }
         );
         setBatchesDetail(response.data.totalBatchesByStatus);
@@ -26,7 +26,7 @@ const ChartsComponent = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://crm-lms-sever.vercel.app/api/leads/getagentsstatdata",
+          "/leads/getagentsstatdata",
           { withCredentials: true }
         );
         setAgentCounts(Object.values(response.data));

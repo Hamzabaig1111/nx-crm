@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import "../styles/Profile.css";
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 
 const ProfilePage = () => {
   const agentID = localStorage.getItem("userId");
@@ -10,7 +10,7 @@ const ProfilePage = () => {
     queryKey: ["singleAgent"],
     queryFn: () =>
       axios
-        .get(`https://crm-lms-sever.vercel.app/api/agents/${agentID}`, {
+        .get(`/agents/${agentID}`, {
           withCredentials: true,
         })
         .then((res) => {

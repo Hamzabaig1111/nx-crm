@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/UpdateLeadPage.css";
 import Header from "../components/Header";
@@ -14,7 +14,7 @@ const UpdateLeadPage = () => {
     const fetchLeadData = async () => {
       try {
         const response = await axios.get(
-          `https://crm-lms-sever.vercel.app/api/leads/${leadId}`,
+          `/leads/${leadId}`,
           { withCredentials: true }
         );
         setLeadData(response.data);
@@ -30,7 +30,7 @@ const UpdateLeadPage = () => {
   const handleUpdateLead = async () => {
     try {
       const response = await axios.put(
-        `https://crm-lms-sever.vercel.app/api/leads/${leadId}`,
+        `/leads/${leadId}`,
         leadData,
         { withCredentials: true }
       );

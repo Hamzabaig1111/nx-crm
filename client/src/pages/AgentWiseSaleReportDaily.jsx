@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import "../styles/DailySaleReport.css";
 import Header from "../components/Header";
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { GetAgentNamesDirect } from "../components/AgentNames";
 const AgentWiseSaleReportDaily = () => {
   const [agentCounts, setAgentCounts] = useState({
@@ -17,7 +17,7 @@ const AgentWiseSaleReportDaily = () => {
     queryKey: ["agentReports"],
     queryFn: () =>
       axios
-        .get("https://crm-lms-sever.vercel.app/api/leads", {
+        .get("/leads", {
           withCredentials: true,
         })
         .then((res) => {
@@ -48,7 +48,7 @@ const AgentWiseSaleReportDaily = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://crm-lms-sever.vercel.app/api/leads/getagentsstatdata",
+          "/leads/getagentsstatdata",
           { withCredentials: true }
         );
         setAgentCounts(response.data);

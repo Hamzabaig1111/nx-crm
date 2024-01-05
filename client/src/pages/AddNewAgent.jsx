@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/AddNewAgent.css";
 import Header from "../components/Header";
 import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/AgentNames";
 import Popup from "reactjs-popup";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import * as Yup from "yup";
@@ -47,7 +47,7 @@ const AddNewAgent = () => {
   const createAgentMutation = useMutation({
     mutationFn: (newAgent) => {
       return axios.post(
-        "https://crm-lms-sever.vercel.app/api/agents/createagent",
+        "/agents/createagent",
         newAgent,
         { withCredentials: true }
       );

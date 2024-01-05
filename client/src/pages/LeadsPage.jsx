@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios"; // You might need to install axios if not already installed
+import axios from "../components/BaseURL"; // You might need to install axios if not already installed
 
 const LeadsPage = () => {
   const [leads, setLeads] = useState([]);
@@ -27,7 +27,7 @@ const LeadsPage = () => {
 
     // Send form data to your API for processing
     try {
-      const response = await axios.post("/api/leads", {
+      const response = await axios.post("/leads", {
         name,
         email,
         mobile,

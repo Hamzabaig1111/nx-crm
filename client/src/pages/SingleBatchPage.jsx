@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { useParams } from "react-router-dom";
 import Header from '../components/Header';
 import '../styles/SingleBadge.css'; // Import your CSS file
@@ -17,7 +17,7 @@ const SingleBatchPage = () => {
 
         // Make a request to get students in a specific batch (using badgeId)
         const response = await axios.get(
-          `https://crm-lms-sever.vercel.app/api/admissions/getstudentswithbatchs?batchName=${badgeId}`
+          `/admissions/getstudentswithbatchs?batchName=${badgeId}`
         );
 
         setStudents(response.data.students);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import FeeLoadingSkeleton from "../components/LoadingSkelton";
 import "../styles/ReceiveableamountPage.css";
 import Header from "../components/Header";
@@ -21,7 +21,7 @@ const ReceiveableAmountPage = () => {
     queryKey: ["receiveableamount", selectedMonth],
     queryFn: () => {
       const apiURL =
-        "https://crm-lms-sever.vercel.app/api/feerecord/receivablestats";
+        "/feerecord/receivablestats";
       return axios
         .get(apiURL, {
           withCredentials: true,
@@ -68,7 +68,7 @@ const ReceiveableAmountPage = () => {
     e.preventDefault();
     try {
       const response = await axios.get(
-        "https://crm-lms-sever.vercel.app/api/feerecord/excelexportfeedetail",
+        "/feerecord/excelexportfeedetail",
         {
           withCredentials: true,
           responseType: "blob",

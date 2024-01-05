@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios"; // You might need to install axios if not already installed
+import axios from "../components/BaseURL"; // You might need to install axios if not already installed
 import Header from "../components/Header";
 import { QueryClient, useQuery } from "@tanstack/react-query";
 import { PencilSquareIcon, TrashIcon } from "@heroicons/react/24/outline";
@@ -12,7 +12,7 @@ const OrdersPage = () => {
     queryKey: ["OrderData"],
     queryFn: () =>
       axios
-        .get("https://crm-lms-sever.vercel.app/api/orders/", {
+        .get("/orders/", {
           withCredentials: true,
         })
         .then((res) => {
@@ -22,7 +22,7 @@ const OrdersPage = () => {
   const handleDeleteOrder = async (id) => {
     try {
       const response = await axios.delete(
-        `https://crm-lms-sever.vercel.app/api/orders/${id}`,
+        `/orders/${id}`,
         { withCredentials: true }
       );
 

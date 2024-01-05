@@ -6,7 +6,7 @@ import {
   TrashIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import FeeLoadingSkeleton from "../components/LoadingSkelton";
@@ -16,14 +16,14 @@ const CoursesPage = () => {
     queryKey: ["courseData"],
     queryFn: () =>
       axios
-        .get("https://crm-lms-sever.vercel.app/api/courses/", { withCredentials: true })
+        .get("/courses/", { withCredentials: true })
         .then((res) => {
           return res.data;
         }),
   });
   const deleteMutationFn = useMutation({
     mutationFn: (courseId) => {
-      return axios.delete(`https://crm-lms-sever.vercel.app/api/courses/${courseId}`);
+      return axios.delete(`/courses/${courseId}`);
     },
     onSuccess: () => {
       refetch();

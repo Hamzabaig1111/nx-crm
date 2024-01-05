@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { Pie } from "react-chartjs-2"; // Import the Pie component
 import "../styles/ActiveBadges.css";
 import Header from "../components/Header";
@@ -24,7 +24,7 @@ const ActiveBadgesPage = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        `https://crm-lms-sever.vercel.app/api/courses/getactivebadges?status=${status}`
+        `/courses/getactivebadges?status=${status}`
       );
       setData(response.data.data);
     } catch (error) {

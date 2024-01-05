@@ -7,7 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import FeeLoadingSkeleton from "../components/LoadingSkelton";
 import "../styles/UserManagement.css";
 import Popup from "reactjs-popup";
@@ -17,7 +17,7 @@ const UserManagementpage = () => {
     queryKey: ["usersData"],
     queryFn: () =>
       axios
-        .get("https://crm-lms-sever.vercel.app/api/agents/", { withCredentials: true })
+        .get("/agents/", { withCredentials: true })
         .then((res) => {
           return res.data;
         }),
@@ -25,7 +25,7 @@ const UserManagementpage = () => {
   console.log(data);
   const deleteMutationFn = useMutation({
     mutationFn: (agentId) => {
-      return axios.delete(`https://crm-lms-sever.vercel.app/api/agents/${agentId}`, {
+      return axios.delete(`/agents/${agentId}`, {
         withCredentials: true,
       });
     },

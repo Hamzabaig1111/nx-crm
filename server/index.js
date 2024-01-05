@@ -23,7 +23,7 @@ dotenv.config();
 // Connect to MongoDB using try-catch approach
 try {
   await mongoose.connect(
-    "mongodb+srv://usama0011:usama0011@cluster0.khzye4h.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://hamzabaig1111:Hamza@264351@crm-nexskill.6k83bcd.mongodb.net/?retryWrites=true&w=majority"
   );
   console.log("Database Connection Successfully!!");
 } catch (error) {
@@ -36,7 +36,7 @@ try {
 // Middleware to parse JSON requests
 app.use(
   cors({
-    origin: "https://crm-lms-client.vercel.app",
+    origin: "https://nexskill.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     optionsSuccessStatus: 200, // Change this to 200

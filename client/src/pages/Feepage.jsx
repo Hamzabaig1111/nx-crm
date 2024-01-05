@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { Link } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import {
@@ -17,7 +17,7 @@ const Feepage = () => {
     queryKey: ["courseData"],
     queryFn: () =>
       axios
-        .get("https://crm-lms-sever.vercel.app/api/feerecord/", {
+        .get("/feerecord/", {
           withCredentials: true,
         })
         .then((res) => {
@@ -28,7 +28,7 @@ const Feepage = () => {
   const deleteMutationFn = useMutation({
     mutationFn: (feeId) => {
       return axios.delete(
-        `https://crm-lms-sever.vercel.app/api/feerecord/${feeId}`,
+        `/feerecord/${feeId}`,
         { withCredentials: true }
       );
     },

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://crm-lms-sever.vercel.app/api",
+  baseURL: "https://nexskill-server.vercel.app/api",
   withCredentials: true,
 });
 

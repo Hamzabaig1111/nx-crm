@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/UpdateAgent.css";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import Header from "../components/Header";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -17,7 +17,7 @@ const UpdateAgent = () => {
     queryKey: ["singleAgent", agentId],
     queryFn: () =>
       axios
-        .get(`https://crm-lms-sever.vercel.app/api/agents/${agentId}`, {
+        .get(`/agents/${agentId}`, {
           withCredentials: true,
         })
         .then((res) => res.data),
@@ -51,7 +51,7 @@ const UpdateAgent = () => {
   const UpdateAgentMutation = useMutation({
     mutationFn: (updateData) => {
       return axios.put(
-        `https://crm-lms-sever.vercel.app/api/agents/${agentId}`,
+        `/agents/${agentId}`,
         updateData,
         { withCredentials: true }
       );

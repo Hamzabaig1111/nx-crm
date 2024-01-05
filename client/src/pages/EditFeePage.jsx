@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
@@ -12,7 +12,7 @@ const EditFeePage = () => {
     queryKey: ["SingleFeeRecord", feeId],
     queryFn: () =>
       axios
-        .get(`https://crm-lms-sever.vercel.app/api/feerecord/single/${feeId}`, {
+        .get(`/feerecord/single/${feeId}`, {
           withCredentials: true,
         })
         .then((res) => res.data),
@@ -21,7 +21,7 @@ const EditFeePage = () => {
   const EditFeePageMutation = useMutation({
     mutationFn: (updateData) => {
       return axios.put(
-        `https://crm-lms-sever.vercel.app/api/feerecord/${feeId}`,
+        `/feerecord/${feeId}`,
         updateData,
         { withCredentials: true }
       );

@@ -3,7 +3,7 @@ import "../styles/AddNewPage.css";
 import Header from "../components/Header";
 import * as Yup from "yup";
 import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
+import axios from "../components/BaseURL";
 
 const AddNewCoursePage = () => {
   let userId = localStorage.getItem("userId");
@@ -61,7 +61,7 @@ const AddNewCoursePage = () => {
     mutationFn: (newCourse) => {
       // Use axios to send the API request
       return axios.post(
-        "https://crm-lms-sever.vercel.app/api/courses/createcourse",
+        "/courses/createcourse",
         newCourse,
         {
           withCredentials: true,
