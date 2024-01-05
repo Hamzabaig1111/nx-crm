@@ -23,7 +23,7 @@ dotenv.config();
 // Connect to MongoDB using try-catch approach
 try {
   await mongoose.connect(
-    "mongodb+srv://hamzabaig1111:Hamza@264351@crm-nexskill.6k83bcd.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://hamzabaig1111:hamzabaig1111@cluster0.liscafg.mongodb.net/?retryWrites=true&w=majority"
   );
   console.log("Database Connection Successfully!!");
 } catch (error) {
