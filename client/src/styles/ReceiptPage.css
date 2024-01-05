@@ -1,0 +1,75 @@
+.searchReceiptContainer {
+  margin-top: 20px;
+}
+.searchReceiptContainer > form {
+  display: flex;
+  align-items: center;
+}
+.searchReceiptContainer > form > input {
+  height: 45px;
+  border: 1px solid gainsboro;
+  padding: 8px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.searchReceiptContainer > form > select {
+  height: 45px;
+  border: 1px solid gainsboro;
+  padding: 8px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.searchReceiptContainer > form > button {
+  height: 45px;
+  border: 1px solid gainsboro;
+  padding: 8px 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  background-color: #481ee2;
+  color: white;
+  cursor: pointer;
+}
+.brandContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.printiIcon {
+  width: 22px;
+  height: 22px;
+  color: #481ee2;
+  cursor: pointer;
+}
+.brandContainer > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.brandContainer > h1 {
+  font-size: 20px;
+}
+.previweFormContainer {
+  margin-top: 20px;
+}
+.previewTableContainer {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.previewTableTh {
+  background-color: #37af65;
+  color: white;
+  cursor: pointer;
+}
+.previewTableTh,
+.previewtabletd {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}

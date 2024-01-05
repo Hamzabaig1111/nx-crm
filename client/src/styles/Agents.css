@@ -1,0 +1,102 @@
+.filterContainer {
+  margin-top: 20px;
+}
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+}
+.modal {
+  padding: 15px 20px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #17b5a0;
+  color: white;
+}
+.myXIcon {
+  width: 22px;
+  height: 22px;
+  color: white;
+}
+.headerTitle {
+  margin-bottom: 10px;
+}
+.actions > button {
+  margin-right: 10px;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.actions {
+  margin-top: 30px;
+}
+.actions > button:first-child {
+  background-color: crimson;
+  color: white;
+}
+
+/* Table Styling  for Agents */
+.AgentTableContainer {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+.myagenttablecontainer {
+  width: 100%;
+}
+.agenttableth,
+.agentTabletd {
+  padding: 10px;
+  text-align: left;
+}
+.agenttableth {
+  background-color: #4caf50;
+  color: white;
+}
+.agenttableth,
+.agentTabletd {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.addCourseContainer > button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  height: 45px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #17b5a0;
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1300px) {
+}
+@media only screen and (max-width: 1078px) {
+}
+
+@media only screen and (max-width: 786px) {
+}
+
+@media only screen and (max-width: 586px) {
+  /* Desing I later sir  */
+}

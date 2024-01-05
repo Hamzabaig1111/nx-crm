@@ -1,0 +1,46 @@
+.UpdateedOrderContainer {
+  margin-top: 20px;
+}
+.UpdateedOrderContainer > form {
+  background-color: white;
+  padding: 10px 20px;
+  max-width: 70%;
+  border-radius: 10px;
+}
+.formItemOrder {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.formItemOrder > label {
+  margin-bottom: 8px;
+}
+.formItemOrder > input {
+  height: 50px;
+  border: 1px solid gainsboro;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.formItemOrder > textarea{
+  border: 1px solid gainsboro;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.UpdateedOrderContainer > form > button{
+    height: 50px;
+    width: 100%;
+    background-color: #5cce93;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+.formItemOrder > select{
+height: 50px;
+padding: 5px 10px;
+border: 1px solid gainsboro;
+border-radius: 5px;
+}

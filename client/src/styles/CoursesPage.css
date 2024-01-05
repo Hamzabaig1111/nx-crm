@@ -1,0 +1,131 @@
+.CoursesContentContainer {
+  margin-top: 20px;
+  width: 100%;
+}
+.filterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  width: 100%;
+  height: 70px;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+.coursesTableContainer {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+  padding: 10px 20px;
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.TableIcon {
+  color: crimson;
+  width: 22px;
+  cursor: pointer;
+  height: 22px;
+}
+.currentUser > span {
+  font-weight: bold;
+}
+.searchFormContainer {
+  display: flex;
+  align-items: center;
+}
+.searchFormContainer > input,
+.searchFormContainer > button {
+  margin-right: 10px;
+}
+.searchFormContainer > input {
+  padding: 10px 5px;
+  border: 1px solid gainsboro;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+  color: gray;
+}
+.searchbtn {
+  border: none;
+  cursor: pointer;
+  background-color: #3498db;
+  outline: none;
+  font-weight: bold;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.clrgray {
+  color: gray;
+  cursor: pointer;
+}
+.addCourseContainer {
+  margin: 10px 0px;
+}
+.addCourseContainer a > button {
+  border: none;
+  outline: none;
+  background-color: #17b5a0;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 18px;
+  font-size: 16px;
+}
+
+/* Tables CSS */
+
+.mycoursesTable {
+  margin-top: 20px;
+}
+/* Table styles */
+.coursesTableContainer {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.mycoursesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.table-header-couurses,
+.table-data-courses {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-header-couurses {
+  background-color: #37af65;
+  color: white;
+}
+
+.table-row-courses:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .mycoursesTable {
+    border: 0;
+  }
+
+  .table-header-couurses,
+  .table-data-courses {
+    padding: 8px;
+  }
+
+  .table-header-couurses {
+    font-size: 14px;
+  }
+
+  .table-data-courses {
+    font-size: 12px;
+  }
+}

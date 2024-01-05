@@ -1,0 +1,45 @@
+/* ActiveBadges.css */
+.chart_pie_container{
+  width: 300px;
+  height: 300px;
+  padding-left: 0px;
+}
+.parentContainerofActiveBadges{
+  display: flex;
+}
+.status-filter {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.status-filter > select{
+  border: 1px solid gainsboro;
+  height: 40px;
+  padding: 5px 20px;
+  margin-left: 10px;
+}
+.loading,
+.error {
+  margin: 20px 0;
+  padding: 10px; /* Red background for error, you can change it */
+}
+
+.badges-table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 900px;
+}
+.myiconsarch {
+  width: 22px;
+  height: 22px;
+}
+.badges-table th,
+.badges-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.badges-table th {
+  background-color: #37af65;
+  color: white;
+}

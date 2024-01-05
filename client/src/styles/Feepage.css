@@ -1,0 +1,69 @@
+.loeading {
+  margin-top: 20px;
+}
+.myFeeTable {
+  margin-top: 20px;
+}
+/* Table styles */
+.FeeTableContainer {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.myFeeTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.updateIcon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.green{
+    color: green;
+}
+.red {
+  color: crimson;
+  cursor: pointer;
+}
+.feetableth,
+.table-data-fee {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.feetableth {
+  background-color: #37af65;
+  color: white;
+}
+
+.table-row-fee:hover {
+  background-color: #f5f5f5;
+}
+.myfeeUL{
+  list-style: none;
+}
+.myfeeUL > li{
+  margin-bottom: 5px;
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .myFeeTable {
+    border: 0;
+  }
+
+  .feetableth,
+  .table-data-fee {
+    padding: 8px;
+  }
+
+  .feetableth {
+    font-size: 14px;
+  }
+
+  .table-data-fee {
+    font-size: 12px;
+  }
+}

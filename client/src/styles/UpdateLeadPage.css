@@ -1,0 +1,35 @@
+.formUpdateLead {
+  margin-top: 20px;
+}
+.formUpdateLead {
+  max-width: 50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.updatelaedItemSingle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.updatelaedItemSingle > select {
+  width: 100%;
+  border: 1px solid gainsboro;
+  outline: none;
+  height: 50px;
+  border-radius: 5px;
+}
+.formUpdateLead > button {
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  outline: none;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #37af65;
+  color: white;
+}

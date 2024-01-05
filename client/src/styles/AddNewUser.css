@@ -1,0 +1,57 @@
+.formContainerAddNewAgent {
+  margin-top: 20px;
+}
+.addnewagentformcontainer {
+  max-width: 80%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.addnewItemAgentField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.addnewItemAgentField > label {
+  margin-bottom: 8px;
+}
+.addnewItemAgentField > input {
+  height: 50px;
+  border: 1px solid gainsboro;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.addnewItemAgentField > select {
+  height: 50px;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+.agentCheckboxContainer {
+  margin-bottom: 15px;
+}
+.agentCheckboxContainer > label {
+  margin-right: 10px;
+}
+.agentCheckboxContainer > input{
+    cursor: pointer;
+}
+.mycustomErrorUser{
+ color: crimson;
+ padding: 5px 0px;
+ font-size: 14px;   
+}
+.addnewagentformcontainer > button {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 55px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: brown;
+  color: white;
+  padding-inline-start: 12px 5px;
+}

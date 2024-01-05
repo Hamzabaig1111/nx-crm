@@ -1,0 +1,97 @@
+.navigationContainer {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 350px;
+  padding: 10px 10px;
+  background-color: #f6f8fe;
+  height: 100vh;
+  overflow-y: scroll;
+  z-index: 999;
+}
+.navigationContainer::-webkit-scrollbar {
+  display: none;
+}
+.navIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  color: rgb(102, 90, 90);
+}
+.myImage {
+  height: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 999;
+  object-fit: cover;
+  background-size: cover;
+}
+.logoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 8px 5px;
+  border-radius: 5px;
+}
+.link > a {
+  color: black;
+}
+.linksContainer {
+  margin-top: 30px;
+}
+.hamburgerIcon {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1078px) {
+}
+@media only screen and (max-width: 786px) {
+  .navigationContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0);
+  }
+
+  .mobileLogout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburgerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+
+  .navigationContainer.open {
+    transform: translateX(-100%);
+  }
+}
+@media only screen and (max-width: 586px) {
+  /* Desing I later sir  */
+}

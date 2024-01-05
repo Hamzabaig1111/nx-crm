@@ -1,0 +1,79 @@
+.addCourseParentContainer {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.addCourseParentContainer {
+  margin-top: 20px;
+}
+.addnewcouresformcontainer {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.addnewCourseFormContainer {
+  width: 70%;
+}
+.addcourseformfield {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.addcourseformfield > label {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.addcourseformfield > input {
+  height: 40px;
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+.addcourseformfield > select {
+  height: 40px;
+  padding: 5px 15px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.currentcoursesStatContainer {
+  width: 30%;
+}
+.currentcoursesStatContainer > div > h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.feealertContainier {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.batchviewalertContainer {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.addcourebuttoncss {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  width: 100%;
+  font-size: 18px;
+  background-color: #17b5a0;
+  border-radius: 5px;
+  color: white;
+}
+.bathviewclass > h1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}

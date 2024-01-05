@@ -1,0 +1,7 @@
+.JoharTotalEarningsContainer{
+    margin: 20px 0px;
+}
+.JoharTotalEarningsContainer > p > span{
+    font-weight: bold;
+    margin-right: 5px;
+}

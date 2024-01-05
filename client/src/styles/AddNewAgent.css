@@ -1,0 +1,81 @@
+.error-message{
+  color: crimson;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+.AddAgentFormContainerNew {
+  margin-top: 20px;
+}
+.addagentformContainer {
+  background-color: white;
+  max-width: 70%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.addAgentFormItemSingle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.addAgentFormItemSingle > label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.addAgentFormItemSingle > input {
+  height: 40px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.addagentformContainer > button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: #17b5a0;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+}
+.mycustompopcontainer {
+  border-radius: 10px !important;
+  border: 1px solid red;
+}
+.passworddonotmatch {
+  padding: 50px 10px;
+  border-radius: 10px !important;
+  color: crimson;
+  text-align: center;
+  position: relative;
+}
+.myiconX {
+  width: 22px;
+  height: 22px;
+  color: white;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #17b5a0;
+  color: white;
+  cursor: pointer;
+}
+.agentcreatedSuccsssContainer {
+  padding: 50px 20px;
+  text-align: center;
+  color: #17b5a0;
+}

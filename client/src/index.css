@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f8fe;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.mainContainer {
+  display: flex;
+  width: 100%;
+  background-color: #f6f8fe;
+}
+.mainContextContainer {
+  padding: 20px;
+  width: 100%;
+}

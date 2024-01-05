@@ -1,0 +1,268 @@
+.homeContainer {
+  width: 100%;
+  background-color: #f6f8fe;
+}
+.mainContainerContent {
+  margin-top: 20px;
+  width: 100%;
+}
+.mydate {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.mydate:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+.mydate::-webkit-calendar-picker-indicator {
+  background-color: #60abdd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.mydate::-webkit-inner-spin-button {
+  display: none;
+}
+.mydate::before {
+  content: "\1F4C5"; /* Unicode character for a calendar icon */
+  font-size: 20px;
+  margin-right: 5px;
+}
+.contentboxesContainer {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+.boxescontainer {
+  width: 70%;
+}
+.statcontainer {
+  width: 30%;
+}
+.boxescontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.boxitem {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 30px;
+  padding: 40px 30px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-content: center;
+  cursor: pointer;
+}
+.iconContainerbox {
+  background-color: #3498db;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: 0px auto;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.hereoiconbox {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+.boxsmallstatitem {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.flexcol > span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.boxitem > p {
+  font-size: 14px;
+  color: rgb(143, 139, 139);
+  font-weight: bold;
+}
+.percentageborder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 70%, transparent 80% 100%),
+    conic-gradient(rgb(105, 128, 255) 75%, rgb(223, 218, 219) 0);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.recentprojectContent,
+.saleItemContainer {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 10px;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+.RecentProjectContainer > h1,
+.SalesAnalytics > h1 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.saleItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.firesalesitem {
+  display: flex;
+  align-items: center;
+}
+.middlestat {
+  margin-left: 20px;
+}
+.nos {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.lastth {
+  font-size: 12px;
+  color: gray;
+}
+.colorsstatuContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+.colorsstatuContainer > span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.colorsstatuContainer > span:first-child {
+  color: #3498db;
+  font-weight: bold;
+}
+.pinkcolor {
+  background-color: #f1a30b;
+}
+.nocc {
+  background-color: #17b5a0;
+}
+.recentprojectContent > table > tbody > tr > td {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.ffff {
+  background-color: #fc9295;
+}
+.kkk {
+  background-color: #17b5a0;
+}
+.eee {
+  background-color: #a25ddc;
+}
+.othr {
+  background-color: #45567d;
+}
+.recentprojecttable {
+  border-collapse: collapse;
+  width: 100%;
+}
+.recentprojectth,
+.recentprojecttd {
+  text-align: left;
+  padding: 10px;
+}
+.recentprojecttd[status="Pending"] {
+  color: #ff9800; /* Orange color for Pending status */
+}
+
+.recentprojecttd[status="Inprogress"] {
+  color: #2196f3; /* Blue color for Inprogress status */
+}
+
+.recentprojecttd[status="Delivered"] {
+  color: #4caf50; /* Green color for Delivered status */
+}
+.viewall {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.viewall > button {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  padding: 15px 0px;
+  border: none;
+  outline: none;
+  background-color: #ff9f40;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 1300px) {
+  .contentboxesContainer {
+    flex-direction: column;
+  }
+  .boxescontainer {
+    width: 100%;
+  }
+  .statcontainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 1078px) {
+  .boxescontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .statcontainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .boxescontainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  /* Desing I later sir  */
+}

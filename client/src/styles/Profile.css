@@ -1,0 +1,29 @@
+.userProfleContainer {
+  margin-top: 20px;
+}
+.ProfileContainer {
+  padding: 20px;
+}
+
+.userProfileContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profileDetails {
+  display: flex;
+  align-items: center;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profileInfo {
+  flex-grow: 1;
+}
+
+/* Add more styles as needed */

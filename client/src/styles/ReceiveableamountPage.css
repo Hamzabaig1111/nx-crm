@@ -1,0 +1,68 @@
+.receiveable-amount-page {
+  /* Your styles for the parent container */
+}
+.search-or-filter-parent{
+  display: flex;
+  align-items: center;
+}
+.search-or-filter-parent > button{
+  border: 1px solid gainsboro;
+  padding: 10px 20px;
+  outline:  none;
+  margin-left: 20px;
+  background-color: #d10000; 
+  color: white;
+  cursor: pointer;
+}
+.search-or-filter {
+  /* Your styles for search or filter */
+  margin: 20px 0px;
+}
+.search-or-filter > select {
+  border: 1px solid gainsboro;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+.data-filter-results {
+  /* Your styles for data filter results */
+}
+
+.loading {
+  /* Your styles for loading */
+}
+
+.agent-table-container {
+  /* Your styles for the table container */
+}
+
+.my-agent-table {
+  /* Your styles for the table */
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.my-agent-table th,
+.my-agent-table td {
+  /* Your styles for table header and data cells */
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.my-agent-table th {
+  /* Your styles for table header cells */
+  background-color: #37af65;
+  color: white;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 767px) {
+  .my-agent-table th,
+  .my-agent-table td {
+    /* Adjust styles for smaller screens */
+    padding: 8px;
+  }
+}

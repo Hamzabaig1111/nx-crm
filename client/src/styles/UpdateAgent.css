@@ -1,0 +1,63 @@
+.updateFormAgentContainer {
+  margin-top: 20px;
+}
+
+.loader-myLoader_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.myLoader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+.updateFormAgentContainer {
+  margin-top: 20px;
+}
+.updateFormAgentContainer > form {
+  background-color: white;
+  max-width: 70%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.formItemAgent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.formItemAgent > label {
+  margin-bottom: 8px;
+}
+.formItemAgent > input {
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  outline: none;
+}
+.updateFormAgentContainer > form > button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 15px 15px;
+  background-color: #17b5a0;
+  color: white;
+  border-radius: 5px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

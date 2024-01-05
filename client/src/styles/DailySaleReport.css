@@ -1,0 +1,60 @@
+.agentcounttable {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.agentcounttableth,
+.agentcounttabletd {
+  text-align: center;
+  border: 1px solid gainsboro;
+  padding: 10px;
+}
+.agentcounttableth {
+  background-color: #37af65;
+  color: white;
+}
+.table-containeragentsreport {
+  width: 100%;
+  overflow-x: auto;
+}
+.agentstablethdisplay,
+.agentstabledatatddisplay {
+  text-align: center;
+  border: 1px solid gainsboro;
+  padding: 10px;
+}
+.agentsTableDisplay {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.agentstablethdisplay {
+  background-color: #37af65;
+  color: white;
+  padding: 10px;
+}
+.sortingandfiltercontainer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.fiterdivcontainer {
+  margin-right: 30px;
+}
+.fiterdivcontainer > label {
+  margin-right: 10px;
+}
+.fiterdivcontainer > select{
+    height: 45px;
+    padding: 0px 10px;
+    border: 1px solid gainsboro;
+    outline: none;
+    cursor: pointer;
+}
+.agentfilterTitle{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}

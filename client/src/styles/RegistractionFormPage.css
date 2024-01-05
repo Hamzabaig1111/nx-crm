@@ -1,0 +1,66 @@
+.registerFromItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.registerFromItem > label {
+  margin-bottom: 8px;
+}
+.registerFromItem > input {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: transparent;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.registerFromItem > input:focus {
+  outline: 0;
+  border-color: #757575;
+}
+.info_form1Form {
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+}
+.info_form1Form > form > button {
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 10px;
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  outline: none;
+  background-color: #37af65;
+  color: white;
+}
+.registerFromItem > select {
+  height: 45px;
+  padding: 8px 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  outline: none;
+}
+.registerformsmallicon {
+  width: 20px;
+  height: 20px;
+}
+/* Style the option elements */
+.registerFromItem select option {
+  background-color: #fff; /* Background color of each option */
+  color: #333; /* Text color of each option */
+}
+
+/* Style the selected option */
+.registerFromItem select option:checked {
+  background-color: #e0e0e0; /* Background color of the selected option */
+  font-weight: bold; /* Bold text for the selected option */
+}

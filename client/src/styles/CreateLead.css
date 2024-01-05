@@ -1,0 +1,41 @@
+.createLeadFormContainer {
+  background-color: white;
+  max-width: 70%;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.creatLeadFormItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.creatLeadFormItem > label {
+  margin-bottom: 8px;
+}
+.creatLeadFormItem > input {
+  height: 45px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+.creatLeadFormItem > select {
+  height: 45px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+.leadsubmitbutton {
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #37af65;
+  color: white;
+}

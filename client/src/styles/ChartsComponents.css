@@ -1,0 +1,14 @@
+.badthsChartsDisplayContainer{
+    max-width: 40%;
+    height: 400px;
+}
+.charuuperContainer{
+    display: flex;
+}
+.leadsChartsDisplayContainer{
+    width: 70%;
+    margin-left: 20px;
+}
+.charuuperContainer{
+    margin: 50px 0px;
+}

@@ -1,0 +1,80 @@
+.LoginContainer {
+  width: 100%;
+  height: 100vh;
+  padding: 30px 50px;
+}
+.loginFormContainer {
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+}
+.mykeyIcon {
+  width: 22px;
+  height: 22px;
+}
+.loginFormContainer > h1 {
+  text-align: center;
+}
+.loginform {
+  width: 100%;
+  margin-top: 20px;
+}
+.inputLoginItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.inputLoginItem > label {
+  margin-bottom: 10px;
+}
+.inputLoginItem > input {
+  height: 50px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  outline: none;
+}
+.passwordInputContainer {
+  position: relative;
+  width: 100%;
+}
+.mykeyIcon {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.passwordInputContainer > input {
+  height: 50px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  outline: none;
+  width: 100%;
+}
+.loginbutton {
+  height: 55px;
+  border: 1px solid gainsboro;
+  background-color: #302f29;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.imageContainer {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageContainer > img {
+  width: 200px;
+  height: 200px;
+}
+.error {
+  color: crimson;
+}

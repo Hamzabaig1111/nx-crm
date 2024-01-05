@@ -1,0 +1,6 @@
+.editcheckbox {
+  margin-bottom: 20px;
+}
+.editcheckbox > label {
+  font-weight: bold;
+}

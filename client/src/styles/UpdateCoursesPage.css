@@ -1,0 +1,33 @@
+.formupdateItemcourse {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.uddatecourseFormContainer {
+  background-color: white;
+  max-width: 70%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.formupdateItemcourse > label {
+  margin-bottom: 8px;
+}
+.formupdateItemcourse > input,
+.formupdateItemcourse > select {
+  height: 45px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+.formupdateItemcourse > button {
+  height: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #37af65;
+  border-radius: 5px;
+  color: white;
+}
