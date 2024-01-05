@@ -53,7 +53,7 @@ router.get(
 
 router.post(
   "/createagent",
-  accessMiddlewareForAgentAccountantAdmin,
+  // accessMiddlewareForAgentAccountantAdmin,
   CreateAagent
 );
 router.put("/:agentId", SuperAdminMiddleware, UpdateAgent);
