@@ -23,7 +23,7 @@ dotenv.config();
 // Connect to MongoDB using try-catch approach
 try {
   await mongoose.connect(
-    "mongodb+srv://hamzabaig1111:Hamza@264351@crm-nexskill.6k83bcd.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://hamzabaig1111:Hamza264351@crm-nexskill.6k83bcd.mongodb.net/your-database-name?retryWrites=true&w=majority"
   );
   console.log("Database Connection Successfully!!");
 } catch (error) {
@@ -44,7 +44,7 @@ app.use(
   })
 );
 
-app.options('*', cors()); // Enable pre-flight for all routes
+app.options("*", cors()); // Enable pre-flight for all routes
 app.use(express.json());
 app.use(cookieParser());
 
