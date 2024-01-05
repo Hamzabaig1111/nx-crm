@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "../components/BaseURL";
+import axios from "axios";
 import "../styles/Login.css";
 import { KeyIcon } from "@heroicons/react/24/solid";
 import { EyeSlashIcon } from "@heroicons/react/24/outline";
@@ -17,7 +17,7 @@ const LoginPage = () => {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "/auth/login",
+        "https://nexskill-server.vercel.app/api/auth/login",
         {
           agent_username: username,
           password,
