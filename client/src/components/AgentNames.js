@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "../components/BaseURL";
+import { axios } from "../components/BaseURL";
 
 export const GetAgentNamesDirect = () => {
   const { isPending, error, data, refetch } = useQuery({
