@@ -17,7 +17,7 @@ const AgentWiseSaleReportDaily = () => {
     queryKey: ["agentReports"],
     queryFn: () =>
       axios
-        .get("/leads", {
+        .get("https://nexskill-server.vercel.app/api/leads", {
           withCredentials: true,
         })
         .then((res) => {
