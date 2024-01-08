@@ -1,18 +1,9 @@
-import { useQuery } from "@tanstack/react-query";
-import axios from 'axios'; // Correct import statement
+import React from 'react'
 
-export const GetAgentNamesDirect = () => {
-  const { isPending, error, data, refetch } = useQuery({
-    queryKey: ["agentsnamesData"],
-    queryFn: () =>
-      axios
-        .get("https://nexskill-server.vercel.app/api/agents/getagentsnames", {
-          withCredentials: true,
-        })
-        .then((res) => {
-          return res.data;
-        }),
-  });
-  const mycustemDatalist = data;
-  return { mycustemDatalist };
-};
+const AgentNames = () => {
+  return (
+    <div>AgentNames</div>
+  )
+}
+
+export default AgentNames

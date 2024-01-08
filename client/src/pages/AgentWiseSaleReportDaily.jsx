@@ -2,8 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import "../styles/DailySaleReport.css";
 import Header from "../components/Header";
 import { useQuery } from "@tanstack/react-query";
-import axios from 'axios'; // Moved the import here
-import { GetAgentNamesDirect } from "../components/AgentNames";
+import axios from "axios"; // Correct import statement
 
 const AgentWiseSaleReportDaily = () => {
   const [agentCounts, setAgentCounts] = useState({
@@ -25,7 +24,20 @@ const AgentWiseSaleReportDaily = () => {
           return res.data;
         }),
   });
-  const { mycustemDatalist } = GetAgentNamesDirect();
+
+  const { isPending: agentNamesPending, error: agentNamesError, data: agentNamesData } = useQuery({
+    queryKey: ["agentsnamesData"],
+    queryFn: () =>
+      axios
+        .get("https://nexskill-server.vercel.app/api/agents/getagentsnames", {
+          withCredentials: true,
+        })
+        .then((res) => {
+          return res.data;
+        }),
+  });
+
+  const mycustemDatalist = agentNamesData;
   const [filterByAgent, setFilterByAgent] = useState("");
   const [filterByStatus, setFilterByStatus] = useState("");
 
@@ -48,10 +60,7 @@ const AgentWiseSaleReportDaily = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(
-          "/leads/getagentsstatdata",
-          { withCredentials: true }
-        );
+        const response = await axios.get("/leads/getagentsstatdata", { withCredentials: true });
         setAgentCounts(response.data);
       } catch (error) {
         console.error("Error fetching agent counts:", error);
