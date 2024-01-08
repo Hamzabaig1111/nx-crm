@@ -2,8 +2,9 @@ import React, { useState, useMemo, useEffect } from "react";
 import "../styles/DailySaleReport.css";
 import Header from "../components/Header";
 import { useQuery } from "@tanstack/react-query";
-import axios from "../components/BaseURL";
+import axios from 'axios'; // Moved the import here
 import { GetAgentNamesDirect } from "../components/AgentNames";
+
 const AgentWiseSaleReportDaily = () => {
   const [agentCounts, setAgentCounts] = useState({
     success: 0,
@@ -59,6 +60,7 @@ const AgentWiseSaleReportDaily = () => {
 
     fetchData();
   }, []);
+
   return (
     <div className="DailyREportSectionMainContainer">
       <Header routeName="Overall Leads" />
